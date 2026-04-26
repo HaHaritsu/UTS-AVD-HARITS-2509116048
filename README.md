@@ -1,20 +1,20 @@
 # UTS-AVD-HARITS-2509116048
 
-UTS-AVD: Explanatory Data Analysis (EDA) Faktor Peringkat Anime Menggunakan Dataset MyAnimeList
+## UTS-AVD: Explanatory Data Analysis (EDA) Faktor Peringkat Anime Menggunakan Dataset MyAnimeList
 
-📋 **Informasi Penulis**
+### **Informasi Penulis**
 Nama: Harits
 NIM: 2509116048
 Dataset: anime (1).csv
 
-🎯 **Latar Belakang**
+### **Latar Belakang**
 Industri anime global mengalami pertumbuhan pesat, didukung oleh platform streaming dan komunitas daring seperti MyAnimeList. Peringkat anime di platform ini ditentukan oleh berbagai indikator seperti skor (rating pengguna), jumlah anggota (`members`), popularitas, tipe anime (TV/Movie), dan jumlah episode.
 
 Namun, seringkali ditemukan fenomena di mana anime dengan skor tinggi tidak selalu memiliki popularitas tertinggi, dan sebaliknya. Ini menimbulkan pertanyaan penting seperti apakah skor tinggi selalu berbanding lurus dengan jumlah `members`, apakah tipe anime berpengaruh pada popularitas, dan apakah tahun rilis mempengaruhi jumlah penonton serta peringkat.
 
 Memahami faktor-faktor ini sangat krusial bagi platform streaming, distributor, dan rumah produksi hiburan untuk menentukan strategi promosi, lisensi, dan rekomendasi konten yang efektif. Oleh karena itu, diperlukan analisis mendalam terhadap variabel-variabel dalam dataset ini untuk mengidentifikasi faktor-faktor yang memengaruhi peringkat dan popularitas anime secara keseluruhan.
 
-📊 **Tujuan Analisis**
+### **Tujuan Analisis**
 *   Mengidentifikasi pola distribusi skor anime
 *   Menganalisis hubungan antara `score` dan jumlah `members`
 *   Membandingkan popularitas berdasarkan tipe anime (TV/Movie)
@@ -22,7 +22,7 @@ Memahami faktor-faktor ini sangat krusial bagi platform streaming, distributor, 
 *   Mengidentifikasi pengaruh tahun rilis terhadap `popularity` ranking
 *   Mengetahui apakah anime dengan `score` yang tinggi selalu memiliki popularitas yang sama tinggi
 
-📈 **Ringkasan Hasil EDA**
+### **Ringkasan Hasil EDA**
 **1. Ringkasan Dataset**
 | Aspek         | Nilai       |
 | :------------ | :---------- |
@@ -67,7 +67,7 @@ Dataset terdiri dari 12 kolom dengan deskripsi sebagai berikut:
 *   **`title`**: 9999 judul unik dari 10000 data, dengan 1 duplikasi (`Ling Jian Zun 4th Season`).
 *   **`start_date`**: Terdapat 68 tanggal mulai unik, dengan `2023-01-01` sebagai tanggal yang paling sering muncul (kemungkinan placeholder).
 
-🔍 **Key Findings (Temuan Utama)**
+### **Key Findings (Temuan Utama)**
 **1. Kualitas dan Kelengkapan Data**
 *   **Missing Values**: Dataset sangat lengkap, dengan `synopsis` (0.02%), `start_date` (0.02%), `end_date` (0.84%), dan `episodes` (0.48%) memiliki missing values yang sangat kecil. Missing pada `end_date` kemungkinan karena status anime yang masih tayang (`ongoing`).
 *   **Duplikasi**: Ditemukan 1 baris duplikat pada kolom `title` (`Ling Jian Zun 4th Season`).
@@ -92,10 +92,12 @@ Dataset terdiri dari 12 kolom dengan deskripsi sebagai berikut:
 **7. Anime dengan Episode Terbanyak**
 *   Beberapa judul anime, seperti seri 'Gintama' dan 'Ling Jian Zun 4th Season', menonjol sebagai anime dengan jumlah episode terbanyak, mengindikasikan seri panjang atau banyak musim yang populer.
 
-💡 **Kesimpulan**
+### **Kesimpulan**
 Dataset anime ini, meskipun sangat bersih dengan sedikit *missing values* dan satu duplikasi, memiliki distribusi popularitas dan jumlah `members` yang sangat tidak merata (right-skewed), dipengaruhi oleh segelintir judul anime raksasa yang memiliki `fanbase` sangat besar. Tipe anime TV adalah yang paling dominan dan populer, dan terdapat hubungan antara kualitas (`score`) dengan popularitas (`rank`), di mana anime dengan `score` tinggi cenderung memiliki `rank` popularitas yang lebih baik. Jumlah episode juga sangat bervariasi, dengan keberadaan seri yang sangat panjang. Insights ini memberikan pemahaman awal tentang faktor-faktor yang membentuk popularitas dan peringkat anime di MyAnimeList, menyoroti pentingnya kualitas (`score`) dan durasi (`episodes`) dalam menarik perhatian `members` dan popularitas secara keseluruhan.
 
-📁 **File dan Referensi**
+---
+
+### **File dan Referensi**
 Dataset: `anime (1).csv`
 
 Notebook: `UTS_AVD_Harits.ipynb`
