@@ -96,7 +96,10 @@ Dataset terdiri dari 12 kolom dengan deskripsi sebagai berikut:
 Dataset anime ini, meskipun sangat bersih dengan sedikit *missing values* dan satu duplikasi, memiliki distribusi popularitas dan jumlah `members` yang sangat tidak merata (right-skewed), dipengaruhi oleh segelintir judul anime raksasa yang memiliki `fanbase` sangat besar. Tipe anime TV adalah yang paling dominan dan populer, dan terdapat hubungan antara kualitas (`score`) dengan popularitas (`rank`), di mana anime dengan `score` tinggi cenderung memiliki `rank` popularitas yang lebih baik. Jumlah episode juga sangat bervariasi, dengan keberadaan seri yang sangat panjang. Insights ini memberikan pemahaman awal tentang faktor-faktor yang membentuk popularitas dan peringkat anime di MyAnimeList, menyoroti pentingnya kualitas (`score`) dan durasi (`episodes`) dalam menarik perhatian `members` dan popularitas secara keseluruhan.
 
 📁 **File dan Referensi**
-Dataset: `anime.csv`
-Notebook: `[UTS]TopAnime.ipynb`
+Dataset: `anime (1).csv`
+
+Notebook: `UTS_AVD_Harits.ipynb`
+
 Platform: Google Colab dengan Python 3
+
 Library: pandas, matplotlib, seaborn, numpy
